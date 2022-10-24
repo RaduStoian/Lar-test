@@ -3,21 +3,21 @@
 Started from a barebones Laravel project with most stuff left as default.
 Feel free to change the details below for your particular env, if you wanna run it locally.
 
-db_name = laravel
-APP_URL=http://localhost
+db_name = laravel\
+APP_URL=http://localhost\
 
 
 ## Files worked on 
-Ticket model - app\Models\Ticket.php
-Ticket seeder - database\seeders\TicketSeeder.php
-Ticket factory - database\factories\TicketFactory.php
-Ticket migration - database\migrations\2022_10_24_095042_create_tickets_table.php
+Ticket model - app\Models\Ticket.php\
+Ticket seeder - database\seeders\TicketSeeder.php\
+Ticket factory - database\factories\TicketFactory.php\
+Ticket migration - database\migrations\2022_10_24_095042_create_tickets_table.php\
 
-First command - app\Console\Commands\CreateTickets.php
-Second command - app\Console\Commands\ProcessTickets.php
+First command - app\Console\Commands\CreateTickets.php\
+Second command - app\Console\Commands\ProcessTickets.php\
 
-API config - routes\api.php
-API Controller - app\Http\Controllers\API\TicketController.php
+API config - routes\api.php\
+API Controller - app\Http\Controllers\API\TicketController.php\
 
 
 
@@ -29,4 +29,4 @@ I would assume User and Ticket models would be in a relationship. Here they are 
 
 ## Testing
 No time left to write rigorous tests.
-For now I Went with some basic check response code in - tests\Feature\TicketTest.php
+I added some basic check response code in - tests\Feature\TicketTest.php
