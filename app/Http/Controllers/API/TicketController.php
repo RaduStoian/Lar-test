@@ -15,8 +15,7 @@ class TicketController extends Controller
      */
     public function getProcessedTickets()
     {
-        $tickets = Ticket::where('status', true);
-        return $tickets->paginate();
+        $tickets = Ticket::where('status', true)->paginate(10);
         return response()->json($tickets);
     }
 
