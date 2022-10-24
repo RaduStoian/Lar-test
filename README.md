@@ -19,11 +19,24 @@ Second command - app\Console\Commands\ProcessTickets.php
 API config - routes\api.php\
 API Controller - app\Http\Controllers\API\TicketController.php
 
+## Commands
+`php artisan ticket:create` - will make a ticket with dummy data every 1 minute with info in terminal\
+`php artisan ticket:process` - will process a ticket with dummy data every 5 minutes with info in terminal
+
+## APIs
+`processed-tickets/`\
+`unprocessed-tickets/`\
+`user-tickets/{email}`\
+`ticket-stats`
+
+For urls with pagination, you can add `?page=x`\
+Example: `http://127.0.0.1:8000/api/unprocessed-tickets?page=2`
 
 
 ## Things that would be done for production app
 Console commands would probably be scheduled, or done at once instead of being timed like I did.
 Security for the api and it's inputs. Especially some email validation.
+Better pagination where user can specify page size
 Speed of the ticketing controller by using collections better. Or better, switching to GraphQL.
 I would assume User and Ticket models would be in a relationship. Here they are separate.
 
