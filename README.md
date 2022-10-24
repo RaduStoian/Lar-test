@@ -23,6 +23,10 @@ API Controller - app\Http\Controllers\API\TicketController.php
 
 ## Things that would be done for production app
 Console commands would probably be scheduled, or done at once instead of being timed like I did.
-Security for the api and it's inputs.
+Security for the api and it's inputs. Especially some email validation.
 Speed of the ticketing controller by using collections better. Or better, switching to GraphQL.
 I would assume User and Ticket models would be in a relationship. Here they are separate.
+
+## Testing
+No time left to write rigorous tests.
+For now I Went with some basic check response code in - tests\Feature\TicketTest.php
